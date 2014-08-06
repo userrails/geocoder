@@ -13,11 +13,11 @@
 # gem 'pg'
 #
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: psqlproj_development
+  adapter: mysql2
+  encoding: utf8
+  database: geocoder_development
   pool: 5
-  username: username
-  password:  password
+  username: root
+  password:  root
 
  

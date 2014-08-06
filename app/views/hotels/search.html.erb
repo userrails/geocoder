@@ -1,0 +1,18 @@
+<div style="margin-left: 20px;">
+  <p>Search Result from Geocoder</p>
+
+  <%= form_tag search_result_hotels_path, :method => "GET", :remote => true do %>
+    <div class="row">
+      <div class="col-sm-4">
+        <%= text_field_tag "query", "", :placeholder => "Search by Zipcode" %>
+      </div>
+      <div class="col-sm-2">
+        <%= submit_tag "Search", :class => "btn btn-md btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div id="search">
+  
+</div>
